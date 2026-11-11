@@ -4,155 +4,226 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joseph Luken | Georgia Tech Electrical Engineering</title>
-  <meta name="description" content="Electrical Engineering portfolio of Joseph Luken at Georgia Institute of Technology.">
+  <meta name="description" content="Electrical Engineering student at Georgia Tech. Circuit design, PCB layout, chip fabrication, and embedded systems.">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    body { font-family: 'IBM Plex Sans', sans-serif; background-color: #fcfbf9; color: #1a202c; }
+    .font-mono { font-family: 'IBM Plex Mono', monospace; }
+    .notebook-grid {
+      background-image: 
+        linear-gradient(to right, rgba(0, 48, 87, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 48, 87, 0.04) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    .btn-tactile {
+      border: 1.5px solid #0f172a;
+      background-color: #ffffff;
+      color: #0f172a;
+      font-family: 'IBM Plex Mono', monospace;
+      box-shadow: 2px 2px 0px #0f172a;
+      transition: all 0.1s ease;
+    }
+    .btn-tactile:hover {
+      background-color: #f8fafc;
+      transform: translate(-1px, -1px);
+      box-shadow: 3px 3px 0px #0f172a;
+    }
+    .btn-tactile:active {
+      transform: translate(1px, 1px);
+      box-shadow: 1px 1px 0px #0f172a;
+    }
+    .btn-tactile-primary {
+      border: 1.5px solid #003057;
+      background-color: #003057;
+      color: #ffffff;
+      font-family: 'IBM Plex Mono', monospace;
+      box-shadow: 2px 2px 0px #00192e;
+      transition: all 0.1s ease;
+    }
+    .btn-tactile-primary:hover {
+      background-color: #002544;
+      transform: translate(-1px, -1px);
+      box-shadow: 3px 3px 0px #00192e;
+    }
+    .btn-tactile-primary:active {
+      transform: translate(1px, 1px);
+      box-shadow: 1px 1px 0px #00192e;
+    }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased selection:bg-amber-100 selection:text-amber-900">
+<body class="bg-[#fcfbf9] text-slate-900 antialiased selection:bg-amber-200 selection:text-slate-900">
 
   <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-8">
-      <a href="#" class="text-base font-bold tracking-tight text-slate-900 uppercase">
-        Joseph Luken <span class="text-xs font-mono font-normal text-amber-700 ml-1">· Electrical Engineering</span>
+  <header class="sticky top-0 z-50 bg-[#fcfbf9]/95 backdrop-blur-xs border-b border-slate-300">
+    <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
+      <a href="#" class="flex items-center gap-2 group whitespace-nowrap">
+        <span class="font-mono font-bold text-base text-slate-900 hover:text-[#003057] transition-colors">
+          joseph_luken
+        </span>
+        <span class="text-xs font-mono text-slate-400">[ee @ gatech]</span>
       </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
-        <a href="#about" class="hover:text-slate-900 transition-colors">About</a>
-        <a href="#resume" class="hover:text-slate-900 transition-colors">Resume</a>
-        <a href="#career-plan" class="hover:text-slate-900 transition-colors">Career Plan</a>
-        <a href="#projects" class="hover:text-slate-900 transition-colors text-slate-500">Projects (WIP)</a>
+      <nav class="hidden sm:flex items-center gap-5 text-xs font-mono text-slate-600">
+        <a href="#about" class="hover:text-slate-900 hover:underline">[ about ]</a>
+        <a href="#resume" class="hover:text-slate-900 hover:underline">[ resume ]</a>
+        <a href="#career-plan" class="hover:text-slate-900 hover:underline">[ career plan ]</a>
+        <a href="#projects" class="hover:text-slate-900 hover:underline text-slate-500">[ projects wip ]</a>
       </nav>
       <div>
-        <a href="mailto:joe.luken@gmail.com" class="px-4 py-2 text-xs font-semibold text-white bg-[#003057] rounded-lg hover:bg-[#002544] transition-colors">
-          Get in Touch
+        <a href="mailto:joe.luken@gmail.com" class="btn-tactile px-3 py-1.5 text-xs inline-block">
+          contact
         </a>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="max-w-6xl mx-auto px-6 pt-12 pb-16">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-      <div class="lg:col-span-7">
-        <div class="inline-flex items-center gap-2 text-xs font-mono text-amber-800 bg-amber-50 px-3 py-1 rounded-md border border-amber-200 mb-4">
-          <span>Georgia Institute of Technology</span>
-          <span>·</span>
-          <span>Planned Graduation: Spring 2029</span>
-        </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
-          Joseph Luken
-        </h1>
-        <p class="text-xl text-slate-600 font-medium mb-6">
-          Electrical Engineering Student at Georgia Institute of Technology
-        </p>
-        
-        <div class="p-6 bg-white rounded-xl border border-slate-200 shadow-sm mb-6">
-          <h2 class="text-xs font-mono uppercase tracking-wider text-[#003057] font-semibold mb-2">Welcome</h2>
-          <div class="text-slate-700 leading-relaxed text-sm">
-            <p class="mb-4 text-slate-700 leading-relaxed">I am an EE major at Georgia Tech who is excited to explore circuit design and chip fabrication. I am particularly interested in hardware engineering for practical devices as well as the fabrication constraints behind making those devices possible. Through personal projects and research, I hope to develop my skills in PCB Design and prototyping as well as explore the realm of cutting edge chip fabrication.</p>
+  <section class="pt-10 pb-16 border-b border-slate-200 notebook-grid">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-12 gap-8 items-start">
+        <!-- Photo Column -->
+        <div class="sm:col-span-4 flex flex-col items-center sm:items-start">
+          <div class="w-full max-w-[240px] bg-white p-2 border-2 border-slate-900 shadow-[4px_4px_0px_#0f172a]">
+            <div class="aspect-square w-full overflow-hidden bg-slate-100 border border-slate-200">
+              <img src="./assets/profile.jpg" alt="Joseph Luken" class="w-full h-full object-cover object-top">
+            </div>
+            <div class="pt-2 px-1 text-center font-mono text-xs text-slate-700">
+              <p class="font-bold text-slate-900">Joseph Luken</p>
+              <p class="text-[11px] text-slate-500">Graduation: Spring 2029</p>
+            </div>
+          </div>
+
+          <div class="mt-4 space-y-1.5 text-xs font-mono text-slate-600">
+            <div>📍 Phoenix, AZ &amp; Atlanta, GA</div>
+            <div>✉️ <a href="mailto:joe.luken@gmail.com" class="text-slate-900 hover:underline">joe.luken@gmail.com</a></div>
+            <div>🔗 <a href="https://github.com/loejuken" target="_blank" class="text-slate-900 hover:underline">github.com/loejuken</a></div>
           </div>
         </div>
 
-        <div class="flex flex-wrap items-center gap-4 text-xs font-mono text-slate-500">
-          <span>📍 Phoenix, AZ &amp; Atlanta, GA</span>
-          <span>·</span>
-          <span>🎓 Bachelor of Science in Electrical Engineering</span>
-          <span>·</span>
-          <a href="https://github.com/loejuken" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
-        </div>
-      </div>
+        <!-- Intro Column -->
+        <div class="sm:col-span-8">
+          <div class="text-xs font-mono text-[#003057] uppercase font-semibold tracking-wide mb-1">
+            Georgia Institute of Technology · School of ECE
+          </div>
+          <h1 class="text-3xl sm:text-4xl font-bold font-mono text-slate-900 tracking-tight mb-2">
+            Joseph Luken
+          </h1>
+          <p class="text-sm font-mono text-slate-600 mb-6">
+            Electrical Engineering Student at Georgia Institute of Technology
+          </p>
 
-      <div class="lg:col-span-5">
-        <div class="relative rounded-2xl overflow-hidden border-4 border-white shadow-xl aspect-square max-w-sm mx-auto">
-          <img src="/assets/aistudio/IMG_3982_0bceca41.JPG" alt="Joseph Luken" class="w-full h-full object-cover">
+          <div class="bg-white border-2 border-slate-900 p-5 shadow-[3px_3px_0px_#cbd5e1] mb-6">
+            <div class="font-mono text-xs font-bold text-slate-900 uppercase tracking-wider mb-2 flex items-center justify-between border-b border-slate-100 pb-1.5">
+              <span>Welcome</span>
+              <span class="text-[11px] font-normal text-slate-400">planned graduation: Spring 2029</span>
+            </div>
+            <div class="text-sm sm:text-[15px] text-slate-800 leading-relaxed">
+              <p class="mb-4 text-slate-800 leading-relaxed">I am an EE major at Georgia Tech who is excited to explore circuit design and chip fabrication. I am particularly interested in hardware engineering for practical devices as well as the fabrication constraints behind making those devices possible. Through personal projects and research, I hope to develop my skills in PCB Design and prototyping as well as explore the realm of cutting edge chip fabrication.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 text-xs font-mono">
+            <a href="#about" class="btn-tactile px-3.5 py-1.5 inline-block">
+              about me &darr;
+            </a>
+            <a href="#resume" class="btn-tactile-primary px-3.5 py-1.5 inline-block">
+              view resume
+            </a>
+            <a href="#career-plan" class="btn-tactile px-3.5 py-1.5 inline-block">
+              career plan
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About Me -->
-  <section id="about" class="py-16 bg-white border-y border-slate-200">
+  <section id="about" class="py-16 bg-white border-b border-slate-200">
     <div class="max-w-4xl mx-auto px-6">
-      <div class="text-xs font-mono text-amber-700 font-semibold uppercase tracking-wider mb-2">Background & Journey</div>
-      <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-6">About Me</h2>
-      
-      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed text-sm sm:text-base space-y-4">
-        <p class="mb-4 text-slate-700 leading-relaxed">I was born and grew up in Phoenix, Arizona, where I quickly found my love and dedication for swimming, as well as an interest in current electronics that stemmed from my Dad’s new gadgets. I started swimming at 6 years old, and ever since it has been a key piece of my life. In High school, I spent upwards of 30 hours a week dedicated to swimming. It brought me my best friends, extreme resilience, and many learning opportunities. Later in that time, I even took up a captain role where I mentored over 10 swimmers and worked them through swimming technique as well as the complicated mental behind the sport. As a result, I learned how to teach others and grew even closer to swimming.</p><p class="mb-4 text-slate-700 leading-relaxed">Away from swimming, my love for technology also continued to grow. With my brother, I became increasingly interested in PCs for gaming. We really wanted to build one to the point where it was for just to have the computer parts and build it than game on it. The act of building my own PC became more fun than the reason I bought it for. After multiple upgrades, I had done enough PC building and wanted to expand my experience with tech beyond the surface level. That’s when I saw a keyboard that I wanted, but was too expensive. It had a special layout and a TrackPoint like those on ThinkPad laptops. Instead of buying it, I decided to design my own myself. With no experience, I dropped myself in and designed the PCB and case and got it manufactured. In the end, I have a working project that is undeniably mine and has taught me beyond the surface level of electrical engineering. I had successfully been drawn into making electronic devices.</p><p class="mb-4 text-slate-700 leading-relaxed">Beyond my interests, I graduated high school in spring 2026 and now attend Georgia Tech as an ECE major, planning on graduating Spring 2029. On campus, I have joined swim club continuing my commitment to swim and made sizeable contributions to the Ramblin’ Competition Rocket club on the electrical team, designing rocket PCBs for real competition rockets. I have found Georgia Tech to be the perfect place for me, with its combination of amazing opportunities and the like-minded people that work towards the same engineering goals.</p>
+      <div class="mb-6 flex items-baseline justify-between border-b-2 border-slate-900 pb-2">
+        <h2 class="text-xl sm:text-2xl font-bold font-mono text-slate-900 tracking-tight">// about me</h2>
+        <span class="text-xs font-mono text-slate-500">[phoenix, az &rarr; atlanta, ga]</span>
+      </div>
+
+      <div class="bg-[#fcfbf9] border border-slate-300 p-6 sm:p-8 text-slate-800 leading-relaxed text-[15px] sm:text-base space-y-5">
+        <p class="mb-4 text-slate-800 leading-relaxed">I was born and grew up in Phoenix, Arizona, where I quickly found my love and dedication for swimming, as well as an interest in current electronics that stemmed from my Dad’s new gadgets. I started swimming at 6 years old, and ever since it has been a key piece of my life. In High school, I spent upwards of 30 hours a week dedicated to swimming. It brought me my best friends, extreme resilience, and many learning opportunities. Later in that time, I even took up a captain role where I mentored over 10 swimmers and worked them through swimming technique as well as the complicated mental behind the sport. As a result, I learned how to teach others and grew even closer to swimming.</p><p class="mb-4 text-slate-800 leading-relaxed">Away from swimming, my love for technology also continued to grow. With my brother, I became increasingly interested in PCs for gaming. We really wanted to build one to the point where it was for just to have the computer parts and build it than game on it. The act of building my own PC became more fun than the reason I bought it for. After multiple upgrades, I had done enough PC building and wanted to expand my experience with tech beyond the surface level. That’s when I saw a keyboard that I wanted, but was too expensive. It had a special layout and a TrackPoint like those on ThinkPad laptops. Instead of buying it, I decided to design my own myself. With no experience, I dropped myself in and designed the PCB and case and got it manufactured. In the end, I have a working project that is undeniably mine and has taught me beyond the surface level of electrical engineering. I had successfully been drawn into making electronic devices.</p><p class="mb-4 text-slate-800 leading-relaxed">Beyond my interests, I graduated high school in spring 2026 and now attend Georgia Tech as an ECE major, planning on graduating Spring 2029. On campus, I have joined swim club continuing my commitment to swim and made sizeable contributions to the Ramblin’ Competition Rocket club on the electrical team, designing rocket PCBs for real competition rockets. I have found Georgia Tech to be the perfect place for me, with its combination of amazing opportunities and the like-minded people that work towards the same engineering goals.</p>
       </div>
     </div>
   </section>
 
   <!-- Resume Section -->
-  <section id="resume" class="py-16 max-w-5xl mx-auto px-6">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-      <div>
-        <div class="text-xs font-mono text-amber-700 font-semibold uppercase tracking-wider mb-2">Credentials</div>
-        <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Resume</h2>
-        <p class="text-sm text-slate-600 mt-1">Electrical Engineering · Georgia Institute of Technology</p>
+  <section id="resume" class="py-16 bg-[#fcfbf9] border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="mb-6 flex flex-col sm:flex-row sm:items-baseline justify-between border-b-2 border-slate-900 pb-2 gap-3">
+        <h2 class="text-xl sm:text-2xl font-bold font-mono text-slate-900 tracking-tight">// resume</h2>
+        <div class="flex items-center gap-2.5 text-xs font-mono">
+          <a href="./assets/resume.pdf" target="_blank" class="btn-tactile px-3 py-1.5 inline-block">
+            open in tab
+          </a>
+          <a href="./assets/resume.pdf" download="JosephLuken_Resume.pdf" class="btn-tactile-primary px-3.5 py-1.5 inline-block">
+            download pdf
+          </a>
+        </div>
       </div>
-      <div class="flex items-center gap-3">
-        <a href="/assets/aistudio/JosephLuken_Resume_231cef44.pdf" target="_blank" class="px-3.5 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:bg-slate-50 transition-colors">
-          Open in New Tab
-        </a>
-        <a href="/assets/aistudio/JosephLuken_Resume_231cef44.pdf" download="JosephLuken_Resume.pdf" class="px-4 py-2 bg-[#003057] text-white rounded-lg text-xs font-semibold hover:bg-[#002544] transition-colors">
-          Download PDF
-        </a>
-      </div>
-    </div>
 
-    <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
-      <div class="h-[800px] w-full bg-slate-100">
-        <iframe src="/assets/aistudio/JosephLuken_Resume_231cef44.pdf" class="w-full h-full border-0"></iframe>
+      <div class="bg-white border-2 border-slate-900 shadow-[4px_4px_0px_#cbd5e1] overflow-hidden flex flex-col">
+        <div class="px-4 py-2.5 bg-slate-100 border-b border-slate-300 flex items-center justify-between text-xs font-mono text-slate-600">
+          <span class="font-bold text-slate-900">JosephLuken_Resume.pdf [1 page]</span>
+          <a href="./assets/resume.pdf" download="JosephLuken_Resume.pdf" class="text-[#003057] hover:underline font-bold">download</a>
+        </div>
+        <div class="h-[800px] w-full bg-slate-100">
+          <iframe src="./assets/resume.pdf" class="w-full h-full border-0"></iframe>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Career Plan -->
-  <section id="career-plan" class="py-16 bg-white border-y border-slate-200">
+  <section id="career-plan" class="py-16 bg-white border-b border-slate-200">
     <div class="max-w-4xl mx-auto px-6">
-      <div class="text-xs font-mono text-amber-700 font-semibold uppercase tracking-wider mb-2">Professional Trajectory</div>
-      <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">Career Plan</h2>
-      <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 text-slate-700 text-sm sm:text-base leading-relaxed mb-8">
-        <p class="mb-4 text-slate-700 leading-relaxed">I plan on getting an internship for the summer 2027 and starting a co-op for spring or fall 2028. I also plan on graduating in Spring 2029 with no conflicting co-ops (would be later). To do so, I will knock out key electrical engineering coursework as much as I can, challenging myself to learn topics well and quickly as well as continue to sharpen my development skills through personal projects and clubs.</p>
+      <div class="mb-6 flex items-baseline justify-between border-b-2 border-slate-900 pb-2">
+        <h2 class="text-xl sm:text-2xl font-bold font-mono text-slate-900 tracking-tight">// career plan</h2>
+        <span class="text-xs font-mono text-slate-500">[target: Spring 2029]</span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-5 rounded-xl border border-slate-200">
-          <span class="text-[11px] font-mono text-amber-700 font-semibold block mb-1">Summer 2027</span>
-          <h3 class="text-base font-bold text-slate-900 mb-1">Engineering Internship</h3>
-          <p class="text-xs text-slate-600">Targeting summer hardware or electronics engineering internship.</p>
+      <div class="bg-[#fcfbf9] border border-slate-300 p-6 sm:p-8 text-slate-800 leading-relaxed text-[15px] sm:text-base mb-8">
+        <p class="mb-4 text-slate-800 leading-relaxed">I plan on getting an internship for the summer 2027 and starting a co-op for spring or fall 2028. I also plan on graduating in Spring 2029 with no conflicting co-ops (would be later). To do so, I will knock out key electrical engineering coursework as much as I can, challenging myself to learn topics well and quickly as well as continue to sharpen my development skills through personal projects and clubs.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 font-mono">
+        <div class="bg-white p-5 border-2 border-slate-900 shadow-[3px_3px_0px_#e2e8f0]">
+          <span class="text-xs font-bold text-[#003057] block mb-1">[step 01] Summer 2027</span>
+          <h3 class="text-sm font-bold text-slate-900 mb-2">Engineering Internship</h3>
+          <p class="text-xs text-slate-600 leading-relaxed font-sans">Targeting summer hardware or electronics engineering internship.</p>
         </div>
-        <div class="bg-white p-5 rounded-xl border border-slate-200">
-          <span class="text-[11px] font-mono text-[#003057] font-semibold block mb-1">Spring or Fall 2028</span>
-          <h3 class="text-base font-bold text-slate-900 mb-1">Engineering Co-op</h3>
-          <p class="text-xs text-slate-600">Starting a co-op rotation for hardware and system design implementation.</p>
+        <div class="bg-white p-5 border-2 border-slate-900 shadow-[3px_3px_0px_#e2e8f0]">
+          <span class="text-xs font-bold text-[#003057] block mb-1">[step 02] Spring/Fall 2028</span>
+          <h3 class="text-sm font-bold text-slate-900 mb-2">Engineering Co-op</h3>
+          <p class="text-xs text-slate-600 leading-relaxed font-sans">Starting a multi-term co-op rotation for hardware and system design.</p>
         </div>
-        <div class="bg-white p-5 rounded-xl border border-slate-200">
-          <span class="text-[11px] font-mono text-emerald-700 font-semibold block mb-1">Planned Graduation</span>
-          <h3 class="text-base font-bold text-slate-900 mb-1">Spring 2029</h3>
-          <p class="text-xs text-slate-600">Completing key EE curriculum with no conflicting co-ops.</p>
+        <div class="bg-white p-5 border-2 border-slate-900 shadow-[3px_3px_0px_#e2e8f0]">
+          <span class="text-xs font-bold text-[#003057] block mb-1">[graduation]</span>
+          <h3 class="text-sm font-bold text-slate-900 mb-2">Spring 2029</h3>
+          <p class="text-xs text-slate-600 leading-relaxed font-sans">Completing key EE curriculum with no conflicting co-ops.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects (Work in Progress - No photos, no mock info) -->
-  <section id="projects" class="py-20 bg-white border-t border-slate-200">
+  <!-- Projects (Work in Progress) -->
+  <section id="projects" class="py-16 bg-[#fcfbf9] border-t border-slate-200">
     <div class="max-w-4xl mx-auto px-6">
-      <div class="text-xs font-mono text-amber-700 font-semibold uppercase tracking-wider mb-2">Portfolio</div>
-      <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-8">Projects</h2>
+      <div class="mb-6 flex items-baseline justify-between border-b-2 border-slate-900 pb-2">
+        <h2 class="text-xl sm:text-2xl font-bold font-mono text-slate-900 tracking-tight">// projects</h2>
+        <span class="text-xs font-mono text-amber-800 bg-amber-100 border border-amber-300 px-2 py-0.5">[status: work in progress]</span>
+      </div>
 
-      <div class="bg-slate-50 rounded-xl border border-slate-200 p-12 text-center">
-        <span class="inline-block text-xs font-mono uppercase tracking-wider font-semibold text-amber-800 bg-amber-100 px-3 py-1 rounded-md mb-2">
-          Work in Progress
-        </span>
-        <p class="text-slate-600 text-sm mt-1 max-w-sm mx-auto">
+      <div class="bg-white border-2 border-slate-900 p-10 sm:p-14 text-center shadow-[4px_4px_0px_#e2e8f0]">
+        <h3 class="font-mono font-bold text-sm text-slate-900 uppercase tracking-wider mb-2">Work in Progress</h3>
+        <p class="text-slate-600 text-xs sm:text-sm font-sans max-w-md mx-auto leading-relaxed">
           Work in progress.
         </p>
       </div>
@@ -160,15 +231,15 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-slate-400 py-12 text-sm border-t border-slate-800">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+  <footer class="bg-white text-slate-600 py-12 border-t border-slate-300 text-xs font-mono">
+    <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div>
-        <p class="text-slate-200 font-bold">Joseph Luken · Georgia Institute of Technology</p>
-        <p class="text-xs text-slate-500 mt-1">Electrical Engineering · Planned Graduation: Spring 2029</p>
+        <span class="font-bold text-slate-900">Joseph Luken</span> · Georgia Institute of Technology
+        <p class="text-slate-500 text-[11px] mt-0.5">B.S. Electrical Engineering · Planned Graduation: Spring 2029</p>
       </div>
-      <div class="text-xs text-slate-400">
-        <a href="mailto:joe.luken@gmail.com" class="hover:text-white transition-colors mr-4">joe.luken@gmail.com</a>
-        <a href="https://github.com/loejuken" target="_blank" class="hover:text-white transition-colors">GitHub: loejuken</a>
+      <div>
+        <a href="mailto:joe.luken@gmail.com" class="text-slate-800 hover:underline mr-4">joe.luken@gmail.com</a>
+        <a href="https://github.com/loejuken" target="_blank" class="text-slate-800 hover:underline">github.com/loejuken</a>
       </div>
     </div>
   </footer>
