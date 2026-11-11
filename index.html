@@ -26,8 +26,7 @@
         <a href="#about" class="hover:text-slate-900 transition-colors">About</a>
         <a href="#resume" class="hover:text-slate-900 transition-colors">Resume</a>
         <a href="#career-plan" class="hover:text-slate-900 transition-colors">Career Plan</a>
-        <a href="#projects" class="hover:text-slate-900 transition-colors">Projects</a>
-        <a href="#discovery" class="hover:text-slate-900 transition-colors text-slate-500">Discovery Project</a>
+        <a href="#projects" class="hover:text-slate-900 transition-colors text-slate-500">Projects (WIP)</a>
       </nav>
       <div>
         <a href="mailto:joe.luken@gmail.com" class="px-4 py-2 text-xs font-semibold text-white bg-[#003057] rounded-lg hover:bg-[#002544] transition-colors">
@@ -90,22 +89,25 @@
   </section>
 
   <!-- Resume Section -->
-  <section id="resume" class="py-16 max-w-6xl mx-auto px-6">
+  <section id="resume" class="py-16 max-w-5xl mx-auto px-6">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
       <div>
         <div class="text-xs font-mono text-amber-700 font-semibold uppercase tracking-wider mb-2">Credentials</div>
         <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Resume</h2>
         <p class="text-sm text-slate-600 mt-1">Electrical Engineering · Georgia Institute of Technology</p>
       </div>
-      <div>
-        <a href="/assets/aistudio/JosephLuken_Resume_231cef44.pdf" download class="inline-flex items-center gap-2 px-4 py-2 bg-[#003057] text-white rounded-lg text-xs font-semibold hover:bg-[#002544] transition-colors">
-          Download Resume (PDF)
+      <div class="flex items-center gap-3">
+        <a href="/assets/aistudio/JosephLuken_Resume_231cef44.pdf" target="_blank" class="px-3.5 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:bg-slate-50 transition-colors">
+          Open in New Tab
+        </a>
+        <a href="/assets/aistudio/JosephLuken_Resume_231cef44.pdf" download="JosephLuken_Resume.pdf" class="px-4 py-2 bg-[#003057] text-white rounded-lg text-xs font-semibold hover:bg-[#002544] transition-colors">
+          Download PDF
         </a>
       </div>
     </div>
 
     <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
-      <div class="h-[750px] w-full bg-slate-100">
+      <div class="h-[800px] w-full bg-slate-100">
         <iframe src="/assets/aistudio/JosephLuken_Resume_231cef44.pdf" class="w-full h-full border-0"></iframe>
       </div>
     </div>
@@ -140,66 +142,18 @@
     </div>
   </section>
 
-  <!-- Featured Projects -->
-  <section id="projects" class="py-16 max-w-6xl mx-auto px-6">
-    <div class="text-xs font-mono text-amber-700 font-semibold uppercase tracking-wider mb-2">Engineering Work</div>
-    <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-2">Featured Projects</h2>
-    <p class="text-sm text-slate-600 mb-8">Custom hardware engineering, PCB layouts, firmware, and competition rocketry avionics.</p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
-    <article class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-      <div class="aspect-video w-full bg-slate-100 overflow-hidden relative">
-        <img src="/src/assets/images/trackpoint_mechanical_keyboard_1794370730387.jpg" alt="Custom TrackPoint Mechanical Keyboard" class="w-full h-full object-cover" />
-      </div>
-      <div class="p-6">
-        <div class="text-xs font-mono text-amber-700 mb-1">Hardware &amp; PCB Design · Summer 2026</div>
-        <h3 class="text-xl font-bold text-slate-900 mb-1">Custom TrackPoint Mechanical Keyboard</h3>
-        <p class="text-xs text-slate-500 mb-4">Personal Project · Hardware, Firmware &amp; Embedded Systems</p>
-        <p class="text-sm text-slate-700 leading-relaxed mb-4">Designed a custom 63-key mechanical keyboard incorporating a TrackPoint pointing device, custom 2-layer PCB in KiCad around an ATmega32U4, and 3D-printed enclosure modeled in Fusion 360. Programmed QMK firmware communicating over USART to integrate keyboard and mouse control in a single custom hardware unit.</p>
-        <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs text-slate-600">
-          <span class="bg-slate-100 px-2 py-0.5 rounded font-mono text-[11px]">KiCad</span><span class="bg-slate-100 px-2 py-0.5 rounded font-mono text-[11px]">ATmega32U4</span><span class="bg-slate-100 px-2 py-0.5 rounded font-mono text-[11px]">QMK Firmware</span><span class="bg-slate-100 px-2 py-0.5 rounded font-mono text-[11px]">USART</span><span class="bg-slate-100 px-2 py-0.5 rounded font-mono text-[11px]">Fusion 360</span><span class="bg-slate-100 px-2 py-0.5 rounded font-mono text-[11px]">SMD Soldering</span><span class="bg-slate-100 px-2 py-0.5 rounded font-mono text-[11px]">USB-C</span>
-        </div>
-      </div>
-    </article>
-  
-    <article class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-      <div class="aspect-video w-full bg-slate-100 overflow-hidden relative">
-        <img src="/src/assets/images/kicad_pcb_schematic_1794370732300.jpg" alt="Ramblin&#039; Competition Rocket Club — Electrical Team" class="w-full h-full object-cover" />
-      </div>
-      <div class="p-6">
-        <div class="text-xs font-mono text-amber-700 mb-1">Aerospace Avionics &amp; PCB Design · Fall 2026 – Present</div>
-        <h3 class="text-xl font-bold text-slate-900 mb-1">Ramblin&#039; Competition Rocket Club — Electrical Team</h3>
-        <p class="text-xs text-slate-500 mb-4">Avionics &amp; Competition Rocket PCBs</p>
-        <p class="text-sm text-slate-700 leading-relaxed mb-4">Contributing to the electrical team of the Ramblin&#039; Competition Rocket club at Georgia Tech, designing and routing custom printed circuit boards for competition rockets to ensure reliable power distribution, telemetry, and flight sensor logging.</p>
-        <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs text-slate-600">
-          <span class="bg-slate-100 px-2 py-0.5 rounded font-mono text-[11px]">PCB Design</span><span class="bg-slate-100 px-2 py-0.5 rounded font-mono text-[11px]">KiCad</span><span class="bg-slate-100 px-2 py-0.5 rounded font-mono text-[11px]">Schematic Capture</span><span class="bg-slate-100 px-2 py-0.5 rounded font-mono text-[11px]">Avionics Telemetry</span><span class="bg-slate-100 px-2 py-0.5 rounded font-mono text-[11px]">Hardware Prototyping</span>
-        </div>
-      </div>
-    </article>
-  
-    </div>
-  </section>
-
-  <!-- Discovery Project (Work in Progress) -->
-  <section id="discovery" class="py-16 bg-white border-t border-slate-200">
+  <!-- Projects (Work in Progress - No photos, no mock info) -->
+  <section id="projects" class="py-20 bg-white border-t border-slate-200">
     <div class="max-w-4xl mx-auto px-6">
-      <div class="flex items-center justify-between mb-6">
-        <div>
-          <div class="text-xs font-mono text-amber-700 font-semibold uppercase tracking-wider mb-1">Hardware Prototyping</div>
-          <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Discovery Project</h2>
-        </div>
-        <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-mono font-semibold">
+      <div class="text-xs font-mono text-amber-700 font-semibold uppercase tracking-wider mb-2">Portfolio</div>
+      <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-8">Projects</h2>
+
+      <div class="bg-slate-50 rounded-xl border border-slate-200 p-12 text-center">
+        <span class="inline-block text-xs font-mono uppercase tracking-wider font-semibold text-amber-800 bg-amber-100 px-3 py-1 rounded-md mb-2">
           Work in Progress
         </span>
-      </div>
-
-      <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden p-6 sm:p-8">
-        <div class="aspect-video max-w-2xl mx-auto rounded-lg overflow-hidden mb-6 bg-slate-900">
-          <img src="/src/assets/images/ece_discovery_project_1794370729122.jpg" alt="Discovery Project Setup" class="w-full h-full object-cover">
-        </div>
-        <p class="text-sm text-slate-700 leading-relaxed text-center max-w-xl mx-auto">
-          Currently in development. Project details, documentation, and technical results will be published here upon completion.
+        <p class="text-slate-600 text-sm mt-1 max-w-sm mx-auto">
+          Work in progress.
         </p>
       </div>
     </div>
